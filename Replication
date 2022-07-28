@@ -1,0 +1,6 @@
+# python--3
+
+a = [[2,3]]*2    # print value = [[2,3],[2,3]]
+
+a[1][0] = 5
+print(a)         # print value = [[5,3],[5,3]]
