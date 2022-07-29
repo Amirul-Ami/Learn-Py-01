@@ -1,9 +1,7 @@
-#1 Python Pograming Basics
-
-01---Python basic----
+---Python basic----
 
 * intering experssions into the python shell IDLE (python GUI).
-	# expression => is a kind of pogramming isntruction in the language. Expression consist (values and operators). expressions are just values combined with operators, and they always evaluate down to a single value.
+	# expression => is a kind of pogramming isntruction in the language. Expression consist (values and operators) and they always evaluate down to a single value.
 	# Math operators =( ** * / // % + - ) by precedency
 
 * DATA TYPE > 	integer, floating-point, String,
@@ -13,8 +11,8 @@
 
 * Storing values in a variable
 	assignment operator ->  =
-	variable name   i) it can be only one word
-		             ii) it can use only letters, numbes and underscore (_) character.
-		            iii) it can't begin with a number
+	variable name    i) it can be only one word
+		        ii) it can use only letters, numbes and underscore (_) character.
+		       iii) it can't begin with a number
 
 * Commenting Out : Sometimes, programmers will put a  (#) in front of a line of code to temporarily remove it while testing a program.
