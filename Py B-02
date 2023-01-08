@@ -1,0 +1,71 @@
+    ---Flow control---
+
+1# Boolean Values:
+      1: 	True
+      2:	False
+
+
+
+2# Comparison Operators
+      ==	Equal to
+      !=	Not Equal to
+      >	Less than
+      <	Greater than
+      >=	Less than and equal to
+      <=	Greater than and equal to
+
+
+
+3# Boolean Operators
+      and	or	not
+      
+      (1) Binary Boolean operators:
+	        1# and		True and True  ==  True
+	        2# or		True  or  False  ==  True
+          
+      (2) The not operators:
+        	not = opposite value.	Not True == False
+
+Python evaluates the not operators first, then the and operators, and then the or operators.
+
+
+
+4# Elements of Flow control:
+      Condition 	(which are the same things as expression)
+      block of code
+
+
+
+5# Flow control statement
+      if statement
+      else statement
+      elif statement
+      while loop statement			keep looping while it’s condition is true
+      break statement
+      continue statement
+      for loops and range() function		loop only a certain number of time
+
+          range() function:	starting, stopping, stepping	arguments to range()
+          range(5)== 0,1,2,3 and 4 (but will not include 5)
+          TRAPPED in a INFINITE LOOP:	Press CTRL + C
+
+
+
+6# Truthy and Falsey value
+      name = ' '	=(False)
+      not name 	=(True)
+          When use in condition  (  0,  0.0 and ‘  ’  ) are considered False 
+
+
+
+7# importing module
+      the import keyword
+      the name of the module
+      optionally, more module names, as long as they are separated by commas.
+
+      from import statement:		from random import*
+
+
+
+8# Ending program early
+      sys.exit()
