@@ -1,0 +1,127 @@
+The list data type
+A list is a value that contains multiple values in an ordered sequence.
+Values inside the list are also called items. Items are separated with commas.
+List = [ ‘apple’, ‘banana’, ‘orange’ ]
+
+
+Getting individual values in a list with indexes
+Spam = [ ‘cat’, ‘bat’, ‘rat’, ‘elephant’ ]
+Spam[0] 	the integer inside the square brackets is called an index.
+>>> cat
+
+# List of list = use multiple index. ( spam[1][0] )
+
+Negative indexes
+The integer value  -1 refers to the last index in a list, and so on.
+
+Getting sublists with slices
+A slice can get a several values from a list, in the form of a new list.
+Spam[1:2] is a list with slice.
+# A slice evaluates to a new list value.
+
+Getting a list length with len()
+
+Changing values in a list with index
+spam = ['cat', 'bat', 'rat', 'elephant']
+spam[1] = 'aardvark'
+spam[2] = spam[1]
+spam[0] = spam[3]
+print(spam)
+>>> ['elephant', 'aardvark', 'aardvark', 'elephant']
+List concatenation and list replication
+Addition:
+>>> [1,2,3] + [‘a’,’b’,’c’]
+[1,2,3,’a’,’b’,’c’]
+
+Replication:
+>>>[1,2]*2
+[1,2,1,2]
+
+Removing values from list with del statements
+del spam[2]
+in practice you almost never need to delete simple variables. The del statement is mostly used to delete values from a list.
+
+Working with list
+Using for loops with lists
+Range(4)  is a list-like value.
+Range(len(somelist))
+for i in [0, 1, 2, 3]:
+ print(i)
+The in and not in operators
+You can determine whether a value is or isn’t in a list with the in and not in operators.
+These expression will evaluate to a Boolean value.
+The multiple assignment trick
+Cat = [ ‘fat’, ‘black’, ‘loud’ ]
+Size , color, disposition = Cat
+Augmented assignment operators
+Spam = 42
+Spam = spam + 1
+Spam += 1 	( += ) is the augmented assignment operators
+Augmented assignment statement:
++=   -=   *=   /=    %=
+The += operators can also do string and list concatenation.
+spam = 'hello'
+spam += ' world'
+print(spam)
+
+spam1 = ['amirul', 'ami']
+spam1 += ['mainul']
+print(spam1)
+
+And the *= operators can do string and list replication.
+Methods
+Methods is the same thing as a function, except it is ‘called on’ a value.   [Value=(hello)]  Spam.index(‘hello’).
+Each data type has its own set of methods. For example: the list data type has several useful methods for finding, adding, removing, and otherwise manipulation values in a list.
+Finding a value in a list with index() methods
+If that value exist in the list, the index of value is return.  Spam.index(‘hello’)
+# index  (finding values in a list)
+print(spam.index('hi'))
+''' ValueError:'---'is not in list
+
+Adding values to list with append() and insert() methods
+Spam = [‘cat’, ‘bat’, ‘rat’]
+Spam.append(‘moose’)  	# append() methods call adds the argument to the end of the list.
+Spam.insert(1, ‘chicken’)	# insert() methods can insert a value at any index in the list.
+The return value of append and insert is none.
+# append & insert  (adding values to lists)
+spam.append('cat')
+print(spam)
+
+spam.insert(0,'rat')
+print(spam)
+''' AttributeError:     (it's a list methods.) 
+
+The remove() methods is passed the value to be remove from the list it is called on.
+Spam = [‘cat’, ‘bat’, ‘elephant’]
+Spam.remove(bat) >>> [cat, elephant]
+# remove()  (removing values from lists)
+spam.remove('hello')
+print(spam)
+''' ValueError:list.remove(x): x not in list
+'''
+del spam[0]
+print(spam)
+''' IndexError: list assignment index out of range
+'''
+
+Soting the value in a list with the sort()
+List of numbers and list of string values can be sorted with sort() methods
+# sort()  (sorting the values in a list)
+spam= [2,5,3.2,4,1,-5]
+spam.sort()
+print(spam)
+>>>[-5,1,2,3.2,4,5]
+
+You can also pass True for the reverse keyword argument. (keverse=True)
+spam.sort(reverse=True)
+>>>[5, 4, 3.2, 2, 1, -5]
+
+Note three thing:
+Don’t try to capture the return value by writing code like spam = spam.sort()
+You cannot sort list that have both number values and string values
+Sort() uses ‘ASCIIbetical order’ rather than actual alphabetical order for sorting things.(upper case letters come before lower case letters.
+If you need to sort the values in regular alphabetical order, pass str.lower for the keyword argument in the sort methods.
+a = ['a', 'd','s','k','w','b','A','S','D','K','B','K']
+a.sort(key=str.lower)
+>>>['a', 'A', 'b', 'B', 'd', 'D', 'k', 'K', 'K', 's', 'S', 'w']
+
